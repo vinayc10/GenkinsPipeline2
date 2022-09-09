@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+
+<Properties>
+<Property name="basePath">./logs</Property>
+</Properties>
+
+<Appenders> <!-- tells about where to log?-->
+  <!-- result will be added to the file "print.log" as shown below-->
+<RollingFile name="myFile" ignoreExceptions="false" 
+filePattern="${basePath}/prints-%d{MM-dd-yyyy}.log.gz" fileName="${basePath}/prints.log">
+<PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+<SizeBasedTriggeringPolicy size="500"/>
+<!-- size of file in KB if file reach the size then another file will generate-->
+</RollingFile>
+    
+    <Console name="console" target="SYSTEM_OUT"> <!-- output display in console we can change this to myFile-->
+      <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/><!--Format of output message-->
+    </Console>
+  </Appenders>
+  <Loggers><!-- tells about what to log-->
+   
+    <Root level="info"><!--if level="error" then only error msgs will display. "trace display all message"-->
+      <AppenderRef ref="console"/><!-- refers to console for display-->
+      <AppenderRef ref="myFile"/>
+    </Root>   
+  </Loggers>
+</Configuration>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.restassuredAutomation.testcases2.TC001_Get_All_Employees">
+        <methods>
+          <include name="checkContentLength"/>
+          <include name="setUp"/>
+          <include name="getAllEmployee"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.restassuredAutomation.testcases2.TC001_Get_All_Employees -->
+      <class name="com.restassuredAutomation.testcases2.TC003_POST_Employee_Record">
+        <methods>
+          <include name="checkStatusCode"/>
+          <include name="checkContentType"/>
+          <include name="setUp"/>
+          <include name="checkStatusLine"/>
+          <include name="tearDown"/>
+          <include name="createEmployee"/>
+          <include name="check_responseBody"/>
+          <include name="checkContentLength"/>
+        </methods>
+      </class> <!-- com.restassuredAutomation.testcases2.TC003_POST_Employee_Record -->
+      <class name="com.restassuredAutomation.testcases2.TC004_PUT_Employee_Record">
+        <methods>
+          <include name="checkStatusLine"/>
+          <include name="updateEmployee"/>
+          <include name="checkStatusCode"/>
+          <include name="setUp"/>
+          <include name="checkContentType"/>
+          <include name="check_responseBody"/>
+          <include name="checkContentLength"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.restassuredAutomation.testcases2.TC004_PUT_Employee_Record -->
+      <class name="com.restassuredAutomation.testcases2.TC002_Get_Single_Employee_Record">
+        <methods>
+          <include name="check_responseBody"/>
+          <include name="checkStatusCode"/>
+          <include name="checkContentType"/>
+          <include name="setUp"/>
+          <include name="getAllEmployee"/>
+          <include name="checkContentLength"/>
+          <include name="tearDown"/>
+          <include name="checkServerType"/>
+        </methods>
+      </class> <!-- com.restassuredAutomation.testcases2.TC002_Get_Single_Employee_Record -->
+      <class name="com.restassuredAutomation.testcases2.TC005_Delete_Employee_Record">
+        <methods>
+          <include name="deleteEmployee"/>
+          <include name="checkStatusCode"/>
+          <include name="checkContentType"/>
+          <include name="checkServerType"/>
+          <include name="checkStatusLine"/>
+          <include name="setUp"/>
+          <include name="check_responseBody"/>
+          <include name="tearDown"/>
+          <include name="checkContentLength"/>
+        </methods>
+      </class> <!-- com.restassuredAutomation.testcases2.TC005_Delete_Employee_Record -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
