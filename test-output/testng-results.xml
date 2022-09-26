@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-09-25T17:11:18 IST" name="Default suite" finished-at="2022-09-25T17:11:18 IST" duration-ms="216">
+    <groups>
+    </groups>
+    <test started-at="2022-09-25T17:11:18 IST" name="Default test" finished-at="2022-09-25T17:11:18 IST" duration-ms="216">
+      <class name="sampleBuildJob.sampleBuildJob.BuildTest">
+        <test-method signature="buildTest()[pri:0, instance:sampleBuildJob.sampleBuildJob.BuildTest@17497425]" started-at="2022-09-25T17:11:18 IST" name="buildTest" finished-at="2022-09-25T17:11:18 IST" duration-ms="34" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buildTest -->
+      </class> <!-- sampleBuildJob.sampleBuildJob.BuildTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
